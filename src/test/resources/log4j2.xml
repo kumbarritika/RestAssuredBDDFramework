@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" strict="true">
+<Properties>
+<property name="basePath">./logs </property>
+</Properties>
+
+
+ 
+    
+     
+    
+    <Appenders>
+     <Appender type="Console" name="STDOUT">
+     <Layout type="PatternLayout"
+     pattern="%d{HH:mm:ss:SS} [%t] %-5level %logger{36} - %msg%n"/>
+     </Appender>
+     
+     <Appenders>
+     <Appender type="File" name="file" fileName="D:\JavaAutomationAug\RestAssuredBDDFramework\logs">
+     <Layout type="PatternLayout"
+     pattern="%d{HH:mm:ss:SS} [%t] %-5level %logger{36} - %msg%n"/>
+     </Appender>
+    </Appenders>
+ 
+    <Loggers>
+    <Root level="all">
+            <AppenderRef ref="file"/>
+    </Root>
+ 
+    </Loggers>
+    </Appenders>
+ 
+</Configuration>
